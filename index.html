@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原生 JS 封装拖动验证滑块</title>
+</head>
+<script src="js/sliderTool.js"></script>
+<body>
+   <div class="slider"></div> 
+   <script>
+       let slider = new SliderTool({
+           el: document.querySelector('.slider')
+       });
+       slider.on('complete', () => {
+           alert('验证完成！');
+       })
+   </script>
+</body>
+</html>
